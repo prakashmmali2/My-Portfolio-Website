@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
-import { GraduationCap, Award } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { GraduationCap, Award, Github, Linkedin, Mail } from "lucide-react";
 
 const About = () => {
   return (
@@ -52,6 +53,34 @@ const About = () => {
                 </li>
               </ul>
             </Card>
+          </div>
+          
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
+            <Button 
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              className="bg-gradient-to-r from-primary to-secondary text-background hover:opacity-90 transition-opacity"
+            >
+              Get In Touch
+            </Button>
+            <Button 
+              variant="outline"
+              onClick={() => window.open('#', '_blank')}
+              className="border-primary text-primary hover:bg-primary/10"
+            >
+              View Resume
+            </Button>
+          </div>
+          
+          <div className="flex items-center justify-center gap-6 mt-6">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
+              <Github className="w-6 h-6" />
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
+              <Linkedin className="w-6 h-6" />
+            </a>
+            <a href="mailto:letsworkwithprakash2@gmail.com" className="text-foreground hover:text-primary transition-colors">
+              <Mail className="w-6 h-6" />
+            </a>
           </div>
         </div>
       </div>

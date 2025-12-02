@@ -66,4 +66,33 @@ All colors MUST be HSL.
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Inter', sans-serif;
   }
+  
+  /* Navigation link hover effect */
+  .nav-link {
+    @apply text-foreground transition-colors relative pb-1;
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, hsl(var(--primary)), hsl(var(--secondary)));
+    transition: width 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    @apply text-primary;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  
+  /* Hide Lovable badge */
+  #lovable-badge {
+    display: none !important;
+  }
 }

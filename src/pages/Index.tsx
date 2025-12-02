@@ -18,7 +18,8 @@ const Index = () => {
       <Contact />
       
       <footer className="py-8 text-center text-muted-foreground border-t border-border">
-        <p>© 2024 Prakash Mali. All rights reserved.</p>
+        <p>© 2025 Prakash Mali. All rights reserved.</p>
+        <p className="mt-2 text-sm">AI/ML Developer | Data Science | Data Analytics | Data Operations | Basic Web Developer | Editor</p>
       </footer>
     </div>
   );

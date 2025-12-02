@@ -29,35 +29,24 @@ const Navigation = () => {
             Prakash Mali
           </h1>
           <div className="hidden md:flex items-center gap-8">
-            <button onClick={() => scrollToSection("home")} className="text-foreground hover:text-primary transition-colors">
+            <button onClick={() => scrollToSection("home")} className="nav-link">
               Home
             </button>
-            <button onClick={() => scrollToSection("about")} className="text-foreground hover:text-primary transition-colors">
+            <button onClick={() => scrollToSection("about")} className="nav-link">
               About
             </button>
-            <button onClick={() => scrollToSection("skills")} className="text-foreground hover:text-primary transition-colors">
+            <button onClick={() => scrollToSection("skills")} className="nav-link">
               Skills
             </button>
-            <button onClick={() => scrollToSection("projects")} className="text-foreground hover:text-primary transition-colors">
+            <button onClick={() => scrollToSection("projects")} className="nav-link">
               Projects
             </button>
-            <button onClick={() => scrollToSection("reviews")} className="text-foreground hover:text-primary transition-colors">
+            <button onClick={() => scrollToSection("reviews")} className="nav-link">
               Reviews
             </button>
-            <button onClick={() => scrollToSection("contact")} className="text-foreground hover:text-primary transition-colors">
+            <button onClick={() => scrollToSection("contact")} className="nav-link">
               Contact
             </button>
-          </div>
-          <div className="flex items-center gap-4">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
-              <Github className="w-5 h-5" />
-            </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
-              <Linkedin className="w-5 h-5" />
-            </a>
-            <a href="mailto:letsworkwithprakash2@gmail.com" className="text-foreground hover:text-primary transition-colors">
-              <Mail className="w-5 h-5" />
-            </a>
           </div>
         </div>
       </div>
