@@ -44,10 +44,10 @@ const Hero = () => {
           </div>
           
           <div className="flex items-center justify-center gap-6 mt-6">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
+            <a href="https://github.com/prakashmmali2" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
               <Github className="w-6 h-6" />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
+            <a href="https://www.linkedin.com/in/prakash-mali-38681328a/" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
               <Linkedin className="w-6 h-6" />
             </a>
             <a href="mailto:letsworkwithprakash2@gmail.com" className="text-foreground hover:text-primary transition-colors">
