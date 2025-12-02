@@ -21,29 +21,5 @@ This project is crafted using modern and scalable web technologies:
 - 🔐 Fully responsive design for all devices
 
 ---
+# Develop by Prakash Mali 
 
-## ✏️ How to Edit / Contribute
-
-You can edit this project using any of the methods below:
-
-### 1️⃣ Edit via **Lovable**
-Open the project in Lovable and make instant visual or code edits:
-
-➡️ https://lovable.dev/projects/e5550d76-d782-4825-b343-6661d54865b8
-
-All changes are synced automatically to GitHub.
-
-### 2️⃣ Edit Locally via Your IDE
-
-```sh
-# Clone the repository
-git clone <YOUR_GIT_URL>
-
-# Enter project folder
-cd <YOUR_PROJECT_NAME>
-
-# Install dependencies
-npm install
-
-# Run development server
-npm run dev
