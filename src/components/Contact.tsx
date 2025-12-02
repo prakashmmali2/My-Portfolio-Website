@@ -79,8 +79,8 @@ const Contact = () => {
       <div className="container mx-auto px-6">
         <h2 className="text-4xl font-bold text-center mb-12">Get In Touch</h2>
         
-        <div className="max-w-4xl mx-auto grid md:grid-cols-3 gap-8">
-          <div className="md:col-span-1 space-y-6">
+        <div className="max-w-3xl mx-auto space-y-8">
+          <div className="grid md:grid-cols-3 gap-6">
             <Card className="p-6 space-y-4 border-border bg-card">
               <div className="p-3 bg-primary/10 rounded-lg w-fit">
                 <Mail className="w-6 h-6 text-primary" />
@@ -112,7 +112,7 @@ const Contact = () => {
             </Card>
           </div>
           
-          <Card className="md:col-span-2 p-6 border-border bg-card">
+          <Card className="p-6 border-border bg-card">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="space-y-2">
                 <Label htmlFor="fullName">Full Name *</Label>
