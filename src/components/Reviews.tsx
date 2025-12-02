@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { Star } from "lucide-react";
 
 const reviewsData = [
   {
@@ -32,7 +33,8 @@ const Reviews = () => {
   return (
     <section id="reviews" className="py-20">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center mb-12">Client Reviews</h2>
+        <h2 className="text-4xl font-bold text-center mb-4">Client Reviews</h2>
+        <p className="text-center text-muted-foreground mb-12 text-lg">What clients say about my work</p>
         
         <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
           {reviewsData.map((review, index) => (
@@ -50,6 +52,11 @@ const Reviews = () => {
                   <p className="font-semibold text-foreground">{review.name}</p>
                   <p className="text-sm text-muted-foreground">{review.role}</p>
                 </div>
+              </div>
+              <div className="flex gap-1 mb-2">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-4 h-4 fill-primary text-primary" />
+                ))}
               </div>
               <p className="text-muted-foreground leading-relaxed italic">"{review.review}"</p>
             </Card>

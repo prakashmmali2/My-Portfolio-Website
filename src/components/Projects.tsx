@@ -38,7 +38,7 @@ const Projects = () => {
       <div className="container mx-auto px-6">
         <h2 className="text-4xl font-bold text-center mb-12">Featured Projects</h2>
         
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
           {projectsData.map((project, index) => (
             <Card 
               key={index} 
@@ -52,12 +52,12 @@ const Projects = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
-              <div className="p-6 space-y-4">
-                <h3 className="font-semibold text-xl text-foreground">{project.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">{project.description}</p>
+              <div className="p-5 space-y-3">
+                <h3 className="font-semibold text-lg text-foreground">{project.title}</h3>
+                <p className="text-muted-foreground leading-relaxed text-sm">{project.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag, tagIndex) => (
-                    <Badge key={tagIndex} variant="secondary" className="bg-primary/10 text-primary hover:bg-primary/20">
+                    <Badge key={tagIndex} variant="secondary" className="bg-primary/10 text-primary hover:bg-primary/20 text-xs">
                       {tag}
                     </Badge>
                   ))}
